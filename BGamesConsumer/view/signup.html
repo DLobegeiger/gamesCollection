@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Damien Lobegeiger">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1 id="app_title">Games <br> Collection</h1>
+        <form action="../controller/registration.php" method="POST">
+            <input type="text" name="uname" placeholder="Username" required title="Must not contain numbers"><br>
+            <br>
+            <input type="email" name="email" placeholder="Email" required title="Enter a valid email address"><br>
+            <br>
+            <input type="password" name="pswd" placeholder="Password" minlength="8" required title="Must not contain numbers"><br>
+            <br>
+            <input type="password" name="pswd" placeholder="Confirm Password" minlength="8" required title="Must not contain numbers"><br>
+            <br><br>
+            <input id="signup" type="submit" value="Signup">
+        </form><br>
+        <p id="center_text">Have an account? <a href="login.php"><b>Log in</b></a></p>
+    </body>
+</html>

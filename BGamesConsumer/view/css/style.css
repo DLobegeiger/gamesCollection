@@ -1,0 +1,183 @@
+nav {
+    background-color: #d9d9d9;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline;
+}
+
+#profileicon, #searchicon, #settingsicon, #collectionicon, #wishlisticon {
+    width: 25%;
+}
+
+#searchresults img, #usercollection img, #userwishlist img{
+    float: left;
+    width: 40%;
+    margin: 10px;
+}
+
+input[type="text"], [type="number"], [type="email"], [type="password"] {
+    background-color : white;
+    margin-left: 10%; 
+    width: 80%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 6px solid #bbcde5;
+}
+
+select{
+    background-color : white;
+    margin-left: 10% !important; 
+    width: 80%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 6px solid #bbcde5;
+}
+
+#gametitle::placeholder{
+    color: #a9a9a9;
+}
+
+#signup, #login, #search{
+    background-color: #1C5D99;
+    color: white;
+    margin-left: 25%; 
+    border-radius: 45px;
+    width: 50%;
+    border: none;
+    font-weight: bold;
+}
+
+/*input[type="submit"] {
+    background-color: #1C5D99;
+    color: white;
+    margin-left: 25%; 
+    border-radius: 45px;
+    width: 50%;
+    border: none;
+    font-weight: bold;
+}*/
+
+input[type="button"] {
+    background-color: #1C5D99;
+    color: white;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    border-radius: 45px;
+    width: 50%;
+    border: none;
+    font-weight: bold;
+}
+
+#app_title {
+    color: #639FAB;
+    text-align: center;
+}
+
+#center_text {
+    text-align: center;
+}
+
+#gameDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userGameDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#removeGame{
+    padding-bottom: 50px;
+}
+
+#gameDetailsImage {
+    display: flex;
+    margin: auto;
+    width: 70%;
+}
+
+#addCollection {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#addWishlist {
+    padding-bottom: 70px;
+}
+
+#addCollection input[type="submit"] {
+    background-color: #1C5D99;
+    color: white;
+    margin-left: 25%; 
+    border-radius: 45px;
+    width: 50%;
+    border: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    display: inline;
+}
+
+#spinner{
+    visibility: hidden;
+    width: 100px;
+    height: 100px;
+    font-size:16px;
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #1C5D99;
+    border-radius: 100%;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+  }
+  
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+  
+#spinner.show {
+    visibility: visible;
+}
+#overlay.show {
+    position:absolute;
+    z-index:1;
+    opacity:0;
+}
